@@ -1,5 +1,4 @@
 #header {
-    text-align: center;
     font-size: large;
 }
 
@@ -8,12 +7,12 @@
     margin: 20px 150px;
     display: flex;
     flex-wrap: wrap;
-    width: 800;
-    height: 800;
+    width: 400px;
+    height: 400px;
 }
 
 .default-box {
     background-color: aquamarine;
-    padding: 2px;
-    border-color: darkblue;
+    box-sizing: border-box;
+    border: 1px dotted darkblue;
 }
