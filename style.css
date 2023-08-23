@@ -14,5 +14,10 @@
 .default-box {
     background-color: aquamarine;
     box-sizing: border-box;
-    border: 1px dotted darkblue;
+    border: 1px dotted rgb(46, 46, 255);
+}
+
+.hovered-box {
+    background-color: rgb(46, 46, 255);
+    border: none;
 }
