@@ -1,6 +1,6 @@
 const gridArea = document.querySelector("#grid-area");
 const resetButton = document.querySelector("#reset-button");
-const newGridButton = document.querySelector("new-grid-button");
+const newGridButton = document.querySelector("#new-grid-button");
 let numSquaresPerSide = 16;
 let squareColor = "black";
 
@@ -18,8 +18,9 @@ resetButton.addEventListener("click", () => {
 newGridButton.addEventListener("click", () => {
     do {
         newNumSquares = prompt("How many squares per side? Must be between 1-100");
-    } while (newNumSquares <= 100 && newNumSquares > 1);
+    } while (newNumSquares > 100 || newNumSquares < 1);
 
+    setGrid(newNumSquares);
 });
 
 // define event functions here
