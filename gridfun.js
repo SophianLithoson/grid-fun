@@ -19,10 +19,10 @@ for (let i = 0; i < (numSquaresPerSide ** 2); i++) {
 
 resetButton.addEventListener("click", () => {
     const squares = document.querySelectorAll("#grid-area div");
-    [...squares].forEach(square => {
-        square.removeAttribute("style");
+    for (let square of squares) {
+        square.style.backgroundColor = null;
         square.setAttribute("class", "default-box");
-    })
+    }
 });
 
 // define event functions here
